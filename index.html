@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Solution Hub</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    
+    .navbar-custom {
+      background-color: #1B4F72;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text {
+      color:;
+    }
+
+    .navbar-custom .navbar-nav .nav-link {
+      color: white;
+    }
+
+    .navbar-custom .navbar-nav .nav-link:hover {
+      color: white;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .cover {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color: #f0f0f0;
+        overflow: hidden;
+    }
+
+    .background-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/technology-image.jpg'); /* Replace 'technology-image.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        filter: blur(5px);
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+    }
+
+    .content h1 {
+        font-size: 48px;
+        font-weight: bold;
+        color:#1B4F72;
+    }
+
+    .content p {
+        font-size: 24px;
+        color:#1B4F72;
+        margin-top: 20px;
+      font-style: oblique;
+    }
+
+
+    .services {
+     background-color: #1B4F72;
+        color: #fff;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .slideshow-container {
+        position: relative;
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+      width: 1000px;
+      margin-left: 130px;
+    }
+
+    .mySlides img {
+        width: 100%;
+    }
+
+
+  
+    .text {
+        color: #fff;
+        font-size: 18px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .fade {
+        animation: fadeEffect 1.5s;
+    }
+
+    @keyframes fadeEffect {
+        from {opacity: 0.4}
+        to {opacity: 1}
+    }
+
+    .about-us {
+        background-color: white;
+        padding: 50px 0;
+    }
+
+    .about-us .container {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .about-us h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      color: #1B4F72;
+    }
+
+    .about-us p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      color: #1B4F72;
+    }
+
+    footer {
+        background-color: #1B4F72;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    footer .container {
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    footer p:before {
+        content: "\00a9";
+        font-size: 18px;
+        margin-right: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="#">Software Solution Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Team.html"> Team </a>
+            </li>
+            </li>
+            <li class="nav-item">
+ 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact Us.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="cover">
+      <div class="background-img"></div>
+      <div class="content">
+        <h1>Software Solution Hub</h1>
+        <p>Transforming your digital landscape through innovative technology and expert craftsmanship</p>
+      </div>
+    </div>
+
+    <div class="slideshow-container">
+      <section class="services">
+        <div class="slideshow-container">
+          <h2>Services</h2>
+            <div class="mySlides fade">       <img src="images/Web DEVELOPMENT.png" style="width:80%">
+            </div>
+            <div class="mySlides fade">
+             
+                <img src="images/Machine Learning.png" style="width:80%">
+            </div>
+            <div class="mySlides fade">
+          
+                <img src="images/CYBER SECURITY.png" style="width:80%">
+            </div>
+          <div class="mySlides fade">
+              <img src="images/IOT.png" style="width:80%">  
+          </div>
+
+      </section>
+
+      
+
+            <section class="about-us">
+                <div class="container">
+                    <h2>About Us</h2>
+                    <p>Software Solution Hub is a leading technology company dedicated to providing innovative and comprehensive software solutions to businesses of all sizes and industries. With a team of highly skilled and experienced professionals, we specialize in developing customized software applications tailored to meet the specific needs and goals of our clients.</p>
+                    <p>We pride ourselves on fostering long-term partnerships with our clients, serving as their trusted technology advisor and assisting them in achieving their business objectives. Whether you are a startup, a small business, or a large enterprise, we are here to provide you with reliable, scalable, and future-proof software solutions that drive success in the digital age. Let us be your strategic partner on your journey to digital transformation.</p>
+                </div>
+            </section>
+
+
+      <footer>
+          <div class="container">
+              <p>&copy; 2024 Software Solution Hub</p>
+          </div>
+      </footer>
+
+
+</body>
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+
+</script>
+
+  
+
+</html>
